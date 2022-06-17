@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculo</title>
 </head>
 <body>
+    <h1>Calculo</h1>
+
+    <script>
+        var n1
+        var n2
+        var resultado
+
+        n1 = prompt("Digite aqui o primeiro numero")
+        n2 = prompt("Digite aqui o segundo numero")
+
+        console.log("O primeiro numero é: " + n1 + " - " + "O segundo numero é: " + n2)
+
+        resultado = Number.parseInt(n1) + Number.parseInt(n2)
+        console.log("O resultado da soma é: " + resultado)
+
+        resultado = Number.parseInt(n1) - Number.parseInt(n2)
+        console.log("O resultado da subtração é: " + resultado)
+
+        resultado = Number.parseInt(n1) / Number.parseInt(n2)
+        console.log("O resultado da divisão é " + resultado)
+
+        resultado = Number.parseInt(n1) * Number.parseInt(n2)
+        console.log("O resultado da multiplicação é " + resultado)
+        
+        resultado = Number.parseInt(n1) ** Number.parseInt(n2)
+        console.log("O resultado da potencia é " + resultado)
+        
+        resultado = Number.parseInt(n1) % Number.parseInt(n2)
+        console.log("O resultado do modulo é " + resultado)
+
+        console.log("Incrementar " + n1++)
+        console.log("O valor incrementado é " + n1)
+
+        console.log("Decrementar " + n2)
+        console.log("O valor decrementado é " + --n2)
+    </script>
     
 </body>
 </html>

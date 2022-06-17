@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>IMC</h1>
+
+
+    <script>
+        var altura
+        var peso 
+        var imc 
+
+        altura = prompt("Digite aqui sua altura ")
+        peso = prompt("Digite aqui seu peso ")
+
+        console.log("Sua altura é " + altura)
+        console.log("Seu peso é " + peso)
+
+        imc = Number.parseFloat(peso) / (Number.parseFloat(altura) * Number.parseFloat(altura))
+
+        console.log("Seu IMC é " + imc)
+    </script>
     
 </body>
 </html>

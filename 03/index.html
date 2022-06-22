@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exemplos</h1>
+    <h2 id="id0">Utilizando ByID</h2> <!---->
+
+    <!--Tag com Classes-->
+    <p class="classe">Utilizando ByClassName 0</p>
+    <p class="classe">Utilizando ByClassName 1</p>
+    <p class="classe">Utilizando ByClassName 2</p>
+    <p class="classe">Utilizando ByClassName 3</p>
+        <p class="classe">Utilizando ByClassName 4</p>
+    <span class="classe">Utilizando ByClassName 5</span>
+    <h3 class="classe">Utilizando ByClassName 6</h3>
+
+    <!--TagName-->
+    <a href="">Link utilizando TagName 0</a>
+    <a href="">Link utilizando TagName 1</a>
+
+    <!--Name-->
+    <input type="text" name="txtName" value="Usando Name 0" />
+
+
+    <!--Seletor-->
+    <div>
+        <p>Utilizando Seletor 0</p>
+        <p>Utilizando Seletor 1</p>
+    </div>
+
+    <!-- JS -->
+
+    <script>
+        //Capturando H2 pelo ID
+        console.log("---- ID ----")
+        var id0 = document.getElementById('id0')
+        console.log(id0.innerText)
+
+        // Capturando P/Span pela Classe
+        console.log("---- CLASS ----")
+        var classe = document.getElementsByClassName('id0')
+        console.log(classe)
+
+        // Capturando pela TagName
+        console.log("---- TAGNAME ----")
+        var tagName = document.getElementsByTagName('a')
+        console.log(tagName[--tagName.length])
+        // tagName[2] => tagName[--tagName.lenght]
+
+        // Capturando Name
+        console.log("---- Name ----")
+        var txtNome = document.getElementsByName('txtName')
+        console.log(txtNome[0].defaultValue)
+
+        //Capturando o Seletor 
+        console.log("---- Seletor ----")
+        var parag = document.querySelector('div p')
+        console.log(parag.innerText)
+
+        //Capturando Seletores
+        console.log("---- Seletores ----")
+        var seletores = document.querySelectorAll(' .seletores p')[0] // [0 / length -1]
+        console.log(seletores)
+
+
+
+    </script>
+</body>
+</html>
+
+| VARIAVEL = VALOR |
+
+| 0 => VALOR | 1 => VALOR | 2 => VALOR |

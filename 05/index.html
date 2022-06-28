@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 de JS</title>
+</head>
+<body>
+    <script>
+        var numero1 = 15
+        var numero2 = 20
+
+        //Função sem parametro
+        function saudacao(){ // Declarando a função
+            console.log("Hello,World")
+        }
+
+        saudacao() // Chamando a Função
+
+        // Função com parametro
+        function somar(num1, num2){
+            var s = num1 + num2
+            console.log(s) // console.log(num1 + num2)
+        }
+        somar(numero1, numero2)
+        somar(20, -51)
+        somar(2, 10)
+        somar(150, -1)
+        somar(50, 5000)
+
+        // Função com retorno
+        function subt(num1, num2){ // declaração
+            |   |    |     |    | // var subtr = num1 - num2
+            return num1 - num2 // return subtr
+        }
+        console.log(subt(10,5))
+
+        function mult(){
+            return 10 * 5
+        }
+        console.log(mult())
+
+        somar(mult(), 4)
+        somar(mult(), subt(numero1, numero2))
+        subt(somar(10, 26), mult())
+
+        function pessoa(){
+
+        }
+
+    }
+    // prompt('')
+    function pessoa(altura, peso , idade , )
+    </script>
+</body>
+</html>
